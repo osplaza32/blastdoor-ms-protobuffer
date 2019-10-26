@@ -1,0 +1,15 @@
+// //
+// // this project is the 2.0 of my old iot project https://github.com/osplaza32/Blassdort/ ms and unicorns, no legacy or dragons
+// //
+
+syntax = "proto3";
+
+package management.iot.hardware.v1;
+
+option csharp_namespace = "Management.Iot.Hardware.V1";
+option go_package = "hardwarev1";
+option java_multiple_files = true;
+option java_outer_classname = "HardwareProto";
+option java_package = "com.management.iot.hardware.v1";
+option objc_class_prefix = "MIH";
+option php_namespace = "Management\\Iot\\Hardware\\V1";

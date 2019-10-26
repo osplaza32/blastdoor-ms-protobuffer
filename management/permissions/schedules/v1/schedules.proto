@@ -1,0 +1,15 @@
+// //
+// // this project is the 2.0 of my old iot project https://github.com/osplaza32/Blassdort/ ms and unicorns, no legacy or dragons
+// //
+
+syntax = "proto3";
+
+package management.permissions.schedules.v1;
+
+option csharp_namespace = "Management.Permissions.Schedules.V1";
+option go_package = "schedulesv1";
+option java_multiple_files = true;
+option java_outer_classname = "SchedulesProto";
+option java_package = "com.management.permissions.schedules.v1";
+option objc_class_prefix = "MPS";
+option php_namespace = "Management\\Permissions\\Schedules\\V1";

@@ -1,0 +1,15 @@
+// //
+// // this project is the 2.0 of my old iot project https://github.com/osplaza32/Blassdort/ ms and unicorns, no legacy or dragons
+// //
+
+syntax = "proto3";
+
+package managment.companies.property.v1;
+
+option csharp_namespace = "Managment.Companies.Property.V1";
+option go_package = "propertyv1";
+option java_multiple_files = true;
+option java_outer_classname = "EntityProto";
+option java_package = "com.managment.companies.property.v1";
+option objc_class_prefix = "MCP";
+option php_namespace = "Managment\\Companies\\Property\\V1";

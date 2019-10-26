@@ -1,0 +1,15 @@
+// //
+// // this project is the 2.0 of my old iot project https://github.com/osplaza32/Blassdort/ ms and unicorns, no legacy or dragons
+// //
+
+syntax = "proto3";
+
+package management.companies.users.v1;
+
+option csharp_namespace = "Management.Companies.Users.V1";
+option go_package = "usersv1";
+option java_multiple_files = true;
+option java_outer_classname = "UsersProto";
+option java_package = "com.management.companies.users.v1";
+option objc_class_prefix = "MCU";
+option php_namespace = "Management\\Companies\\Users\\V1";
