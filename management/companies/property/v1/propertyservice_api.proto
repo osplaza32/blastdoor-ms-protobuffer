@@ -9,7 +9,25 @@ package managment.companies.property.v1;
 option csharp_namespace = "Managment.Companies.Property.V1";
 option go_package = "propertyv1";
 option java_multiple_files = true;
-option java_outer_classname = "PropertyProto";
+option java_outer_classname = "PropertyserviceApiProto";
 option java_package = "com.managment.companies.property.v1";
 option objc_class_prefix = "MCP";
 option php_namespace = "Managment\\Companies\\Property\\V1";
+import "google/api/annotations.proto";
+
+// Algo.
+service PropertyserviceAPI {
+    //Doc.
+    rpc Echo(EchoRequest) returns (EchoResponse) {
+        option (google.api.http) = {
+      post: "/v1/example/echo"
+      body: "*"
+    };
+    }
+}
+message EchoRequest {
+    string value = 1;
+}
+message EchoResponse {
+    string value = 1;
+}

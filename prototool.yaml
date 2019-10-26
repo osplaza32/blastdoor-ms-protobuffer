@@ -43,8 +43,8 @@ create:
       name: management.permissions.resource.v1
     - directory: management/permissions/handler/v1
       name: management.permissions.handler.v1
-    - directory: management/companies/users/v1
-      name: management.companies.users.v1
+    - directory: management/companies/user/v1
+      name: management.companies.user.v1
     - directory: management/companies/property/v1
       name: managment.companies.property.v1
     - directory: management/companies/entity/v1
@@ -133,7 +133,8 @@ generate:
   go_options:
     # The base import path. This should be the go path of the prototool.yaml file.
     # This is required if you have any go plugins.
-    import_path: ../../src/github.com/osplaza32/blastdoor-ms
+    import_path: ../../src/github.com/osplaza32/blastdoor-ms/module/models
+
 
     # Extra modifiers to include with Mfile=package.
 #    extra_modifiers:
@@ -163,7 +164,7 @@ generate:
       # The path to output generated files to.
       # If the directory does not exist, it will be created when running generation.
       # This needs to be a relative path.
-      output: ../../src/github.com/osplaza32/blastdoor-ms
+      output: ../../src/github.com/osplaza32/blastdoor-ms/module/models
 
       # Optional override for the plugin path. For example, if you set set path to
       # /usr/local/bin/gogo_plugin", prototool will add the
@@ -178,10 +179,10 @@ generate:
 
     - name: grpc-gateway
       type: go
-      output: ../../src/github.com/osplaza32/blastdoor-ms
+      output: ../../src/github.com/osplaza32/blastdoor-ms/proxy
     - name: swagger
       type: go
-      output: ../../src/github.com/osplaza32/blastdoor-ms
+      output: ../../src/github.com/osplaza32/blastdoor-ms/mist
 
 #    - name: java
 #      output: ../../.gen/proto/java
